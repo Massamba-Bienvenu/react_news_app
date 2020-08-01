@@ -22,9 +22,9 @@ const Header = (props) => {
             </div>
     )   
     const logo = () => (
-           <Link to='/' className={style.logo}>
-                <img alt="nba logo" src="/images/nba_logo.png"/>
-          </Link>
+        <Link to="/" className={style.logo}>
+            <img alt="nba logo" src="/images/nba_logo.png"/>
+        </Link>
     )
  
     return ( 
