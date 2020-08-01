@@ -51,7 +51,8 @@ const SideNavItems = () => {
             return (
                 <div key={i} className={item.type}>
                     <Link to={item.link}>
-                        <FontAwesomeIcon icon={item.icon}/>
+                        <FontAwesomeIcon icon={item.icon}
+                        style={{color:'#FFFFFF', paddingRight:10}}/>
                         {item.text}
                     </Link>
                 </div>
