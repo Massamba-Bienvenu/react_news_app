@@ -8,6 +8,10 @@ import { faBars} from '@fortawesome/free-solid-svg-icons';
 
 import SideNav from './SideNav/sideNav'
 
+// IMPORT IMAGES
+import Logo  from '../../images/nba_logo.png';
+
+
 const Header = (props) => {
 
     const navBars = () => (
@@ -23,7 +27,7 @@ const Header = (props) => {
     )   
     const logo = () => (
         <Link to="/" className={style.logo}>
-            <img alt="nba logo" src="/images/nba_logo.png"/>
+            <img alt="nba logo" src={Logo}/>
         </Link>
     )
  
