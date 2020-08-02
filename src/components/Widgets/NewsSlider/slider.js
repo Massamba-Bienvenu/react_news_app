@@ -9,7 +9,7 @@ class NewsSlider extends Component {
         news: []
     }
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         axios.get(`${URL}/articles?_start=${this.props.start}&_end=${this.props.amount}`)
         .then(response => {
             this.setState({

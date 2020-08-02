@@ -13,7 +13,7 @@ class NewsList extends Component {
         amount:this.props.amount
      }
 
-     componentWillMount(){
+     UNSAFE_componentWillMount(){
          axios.get(`${URL}/articles?_start=${this.state.start}&_end=${this.state.end}`)
          .then( response =>{
             this.setState({
