@@ -5,13 +5,10 @@ import { Link } from 'react-router-dom';
 // IMPORT CURRENT DATE OBJECT FROM CONFIG FILE
 import {CURRENT_YEAR} from '../../config' ;
 
-// IMPORT IMAGES
-import Logo  from '../../images/nba_logo.png';
-
 const Footer = () =>( 
         <div className={styles.footer}>
             <Link to="/" className={styles.logo}>
-            <img alt="nba logo" src={Logo}/>
+            <img alt="nba logo" src={process.env.PUBLIC_URL + '/images/nba_logo.png'} />
             </Link>
             <div className={styles.right}>
             @NBA {CURRENT_YEAR} All rights reserved.
