@@ -1,8 +1,8 @@
 import React from 'react';
-import NewsList from './Widgets/NewsList/newsList';
+import NewsSlider from '../Widgets/NewsSlider/slider'; 
+import NewsList from '../Widgets/NewsList/newsList';
 
-//IMPORT THE SLIDER COMPONENT
-import NewsSlider from './Widgets/NewsSlider/slider'; 
+
 const Home = () => {
     return ( 
         <div>
@@ -22,7 +22,7 @@ const Home = () => {
                 amount={3}
             />
         </div>
-     );
+     )
 }
  
 export default Home;
